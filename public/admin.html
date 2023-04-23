@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin Dashboard</title>
+	<style>
+		table {
+		  font-family: arial, sans-serif;
+		  border-collapse: collapse;
+		  width: 100%;
+		}
+
+		td, th {
+		  border: 1px solid #dddddd;
+		  text-align: left;
+		  padding: 8px;
+		}
+
+		tr:nth-child(even) {
+		  background-color: #dddddd;
+		}
+	</style>
+    
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="hehe.css">
+   
+
+
+</head>
+<body>
+    <a href="/" class="dash">Home</a>
+	<h1 class="aaa">Time taken by users</h1>
+	<table>
+		<thead>
+			<tr>
+				<th>User ID</th>
+				<th>Time Taken</th>
+			</tr>
+		</thead>
+		<tbody id="time-taken">
+			<!-- The time taken by users will be added here dynamically using JavaScript -->
+		</tbody>
+	</table>
+
+	<script>
+		// Fetch the time taken by users from the server and add them to the table
+		fetch('/timer')
+		.then(response => response.json())
+		.then(data => {
+			const timeTakenTable = document.getElementById('timer');
+			data.forEach(row => {
+				const tr = document.createElement('tr');
+				tr.innerHTML = `
+					<td>${row.id}</td>
+					<td>${row.time_taken}</td>
+				`;
+				timeTakenTable.appendChild(tr);
+			});
+		})
+		.catch(error => console.error(error));
+	</script>
+    <script src="js/home.js"></script>
+</body>
+</html>

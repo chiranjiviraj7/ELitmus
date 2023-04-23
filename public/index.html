@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="hehe.css">
+   
+
+</head>
+
+<body>
+
+    <div class="container">
+     
+        <a href="/admin" class="dash">Admin</a>
+        <button class="logout">log out</button>
+        <h1 class="greeting"></h1>
+        <div id="leftBox">
+            <table id="puzzel">
+            
+            </table>
+            </div>
+            <div id="rightBox">
+                
+                    <table>
+                      <tr>
+                        <td><input class="butt" type="submit" value="Clear All" onclick="clearAllClicked()"></td>
+                        <td><input class="butt check" type="submit" value="Check" onclick="checkClicked()"></td>
+                        <td><input class="butt" type="submit" value="Solve" onclick="solveClicked()"></td>
+                        <td><input class="butt" type="submit" value="Clue" id="clueButton" onclick="clueClicked()"></td>
+
+                      </tr>
+                    </table>
+                  
+                  
+            </div>
+            <table id="hintsTable">
+                    <tr>
+                        <td><strong>Across:</strong></td><td><strong>Down:</strong></td>
+                    </tr>
+                    <tr>
+                        <td>3. Metal Claws with Healing Ability</td><td>1. Gamma Rays</td>
+                    </tr>
+                    <tr>
+                        <td>5. Swings around by a web</td><td>2. Blind, but beware</td>
+                    </tr>
+                    <tr>
+                        <td>6. Swords and healing ability</td><td>4. Love from, Krypton</td>
+            </table>
+        
+    </div>
+
+    <script src="js/home.js"></script>
+
+</body>
+
+</html>

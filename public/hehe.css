@@ -1,0 +1,61 @@
+
+
+#cross{
+	text-align: center;
+	width:30px;
+	height:30px;
+	margin: 0;
+	padding: 0;
+	border-collapse: collapse;
+	border: 1px solid white;
+	border-radius: 3px;
+}
+#buttons{
+	width:30%;
+	float: right;
+}
+tr{
+	margin: 0;
+	padding: 0;
+	border-collapse: collapse;
+}
+td{
+	height: 30px;
+	width: 30px;
+}
+#leftBox{
+	position: absolute;
+	top:  20px ;
+	left: 48px;
+}
+#rightBox{
+	position: absolute;
+	bottom:  30px;
+	left:372px; 
+}
+.butt{
+	height:34px;
+	width: 80px;
+	border-radius: 9px;
+	
+}
+#puzzel{
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	border-collapse: collapse;
+	
+}
+.inputBox{
+		width: 40px;
+		height:40px;
+		border: 1px solid black;
+		text-align: center;
+}
+#hintsTable{
+	width: 480px;
+	position: absolute;
+	top:160px;
+	left:600px;
+	color: aliceblue;
+}
